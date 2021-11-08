@@ -7,9 +7,9 @@ $(".saveBtn").on("click", function() {
     var text = $(this).siblings(".description").val();
     var time = $(this).parent().attr("id");
 
-    localStorage.setItem(time, text);
-    console.log(localStorage.getItem)(time, text)
+    localStorage.setItem(text, time);
 })
+
 
 function timeBlockCode () {
     var timeNow = moment().hours();
